@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>JS Project | Message Encryption</title>
+    <meta name="description" content="">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-message-part">
+            <div class="tab-header">
+                <button id="encrypt_tab" class="tab-btn encrypt_tab active">
+                    Encrypt
+                </button>
+                <button id="decrypt_tab" class="tab-btn decrypt_tab">
+                    Decrypt
+                </button>
+                <button id="details_tab" class="tab-btn details_tab">
+                    Details
+                </button>
+            </div>
+            <div class="tab-body">
+                <div class="tab-content encrypt-message active">
+                    <h2>Type Message to Encrypt</h2>
+                    <textarea rows="4" cols="50" name="input_message" id="input_message" placeholder="Enter Message"></textarea>
+                    <input type="text" name="input_key" id="input_key" placeholder="Enter Key">
+                    <button id="encrypt_btn" class="encrypt_btn">
+                        Encrypt Your Message
+                    </button>
+
+                    <div class="show-message-part">
+                        <h2>Encrypted Message</h2>
+                        <p id="encrypted_message">
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-content decrypt-message">
+                    <h2>Decrypt Your Encrypted Message</h2>
+                    <textarea rows="4" cols="50" name="encrypt_message" id="encrypt_message" placeholder="Enter Message"></textarea>
+                    <input type="text" name="encryption_key" id="encryption_key" placeholder="Enter Key">
+                    <button id="decrypt_btn" class="decrypt_btn">
+                        Decrypt Your Message
+                    </button>
+
+                    <div class="show-message-part">
+                        <h2>Decrypted Message</h2>
+                        <p id="decrypted_message">
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="tab-content details-message">
+                    <h2>Type Your Message</h2>
+                    <textarea rows="4" cols="50" name="input_text" id="input_text" placeholder="Enter Message"></textarea>
+                    <button id="details_btn" class="details_btn">
+                        Details Message
+                    </button>
+
+                    <div class="show-message-part">
+                        <h2>Original Message</h2>
+                        <p id="original_text">
+                            
+                        </p>
+                    </div>
+
+                    <div class="show-message-part">
+                        <h2>Details Message</h2>
+                        <p id="details_text">
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================= Main js =================-->
+    <script src="./main.js"></script>
+</body>
+
+</html
